@@ -5,6 +5,7 @@ const cors = require("cors");
 
 app.use(express.json());
 app.use(cors());
+app.use(express.static("build"));
 
 app.use(
   morgan(function (tokens, req, res) {
@@ -123,3 +124,5 @@ const PORT = process.env.PORT || 3001;
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
 });
+
+// cp -r build ../../part3/phonebook

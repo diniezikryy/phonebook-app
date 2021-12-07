@@ -1,4 +1,4 @@
-POST http://localhost:3002/api/persons/ HTTP/1.1
+POST https://young-basin-44489.herokuapp.com/api/persons/ HTTP/1.1
 content-type: application/json
 
 {
